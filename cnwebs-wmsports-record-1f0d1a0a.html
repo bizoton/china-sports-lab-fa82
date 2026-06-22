@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>完美体育 · 运动生活新入口</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background-color: #f4f5f7;
+      line-height: 1.7;
+      color: #1e1f22;
+    }
+
+    /* 深色头图 + 浅色正文 */
+    .header-hero {
+      background: #0d0f14;
+      background-image: radial-gradient(circle at 10% 30%, #2b2f3a 0%, #0b0d11 100%);
+      color: #eceef2;
+      padding: 3.5rem 1.5rem 3rem;
+      text-align: center;
+      border-bottom: 4px solid #d4a373;
+    }
+
+    .header-hero h1 {
+      font-size: 2.6rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      margin-bottom: 0.4rem;
+      color: #ffffff;
+    }
+
+    .header-hero .sub {
+      font-size: 1rem;
+      color: #b5b9c2;
+      border-top: 1px solid #3d414b;
+      display: inline-block;
+      padding-top: 0.7rem;
+      margin-top: 0.2rem;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 2.2rem 1.5rem 3.5rem;
+    }
+
+    /* 文章卡片式排版 */
+    .post-intro {
+      background: #ffffff;
+      padding: 2rem 2.2rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04), 0 2px 6px rgba(0,0,0,0.02);
+      margin-bottom: 2.2rem;
+    }
+
+    .post-intro .meta-tag {
+      display: inline-block;
+      background: #eaecee;
+      color: #3b3f46;
+      font-size: 0.7rem;
+      padding: 0.2rem 0.9rem;
+      border-radius: 30px;
+      letter-spacing: 0.4px;
+      margin-bottom: 1rem;
+    }
+
+    .post-intro h2 {
+      font-size: 1.8rem;
+      font-weight: 500;
+      letter-spacing: -0.2px;
+      color: #0f1117;
+      margin-bottom: 0.5rem;
+    }
+
+    .post-intro .lead {
+      font-size: 1.05rem;
+      color: #4b4f58;
+      border-left: 4px solid #d4a373;
+      padding-left: 1rem;
+      margin: 0.8rem 0 1.2rem;
+    }
+
+    .post-intro p {
+      margin-bottom: 1rem;
+    }
+
+    /* 引用块 */
+    blockquote {
+      background: #f1f2f5;
+      border-left: 4px solid #9a8c7a;
+      padding: 1rem 1.6rem;
+      margin: 1.5rem 0;
+      color: #2d3038;
+      font-style: normal;
+      border-radius: 0 12px 12px 0;
+    }
+
+    blockquote cite {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: #5c616b;
+    }
+
+    /* 特点小卡片 */
+    .feature-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin-top: 1.8rem;
+    }
+
+    .feature-card {
+      flex: 1 1 180px;
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 1.2rem 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+      border: 1px solid #e6e9ed;
+    }
+
+    .feature-card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #24272d;
+      margin-bottom: 0.2rem;
+    }
+
+    .feature-card p {
+      font-size: 0.9rem;
+      color: #565b66;
+    }
+
+    /* 强调色链接 */
+    a {
+      color: #b36b3f;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid transparent;
+      transition: border 0.15s, color 0.15s;
+    }
+
+    a:hover {
+      color: #8c512e;
+      border-bottom: 1px solid #b36b3f;
+    }
+
+    .question-box {
+      background: #f0f2f5;
+      border-radius: 20px;
+      padding: 1.6rem 1.8rem;
+      margin-top: 1.8rem;
+    }
+
+    .question-box h3 {
+      font-size: 1.15rem;
+      font-weight: 500;
+      margin-bottom: 0.6rem;
+      color: #0e1117;
+    }
+
+    .question-box p {
+      margin-bottom: 0.5rem;
+    }
+
+    .visit-note {
+      margin-top: 2rem;
+      padding: 0.8rem 1.2rem;
+      background: #ffffffde;
+      border: 1px solid #d7d9de;
+      border-radius: 40px;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #363a44;
+    }
+
+    .footer-note {
+      margin-top: 3rem;
+      border-top: 1px solid #d4d7de;
+      padding-top: 1.5rem;
+      text-align: center;
+      color: #6c717d;
+      font-size: 0.85rem;
+    }
+
+    /* 响应式 */
+    @media screen and (max-width: 600px) {
+      .header-hero h1 {
+        font-size: 1.9rem;
+      }
+      .post-intro {
+        padding: 1.5rem 1.2rem;
+      }
+      .feature-grid {
+        flex-direction: column;
+      }
+      .feature-card {
+        flex: 1 1 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 深色头图 -->
+  <header class="header-hero">
+    <h1>完美体育</h1>
+    <div class="sub">运动 · 生活 · 自然节奏</div>
+  </header>
+
+  <main class="container">
+
+    <!-- 文章主体 -->
+    <article class="post-intro">
+      <span class="meta-tag">📌 问得最多的问题</span>
+      <h2>这个网站到底是做什么的？</h2>
+      <div class="lead">
+        三个词回答：体育资讯 · 观赏指南 · 兴趣社区
+      </div>
+      <p>
+        很多人第一次打开一个陌生链接，最想知道的不是功能列表，而是——<strong>这地方到底能给我什么</strong>。
+        <a href="https://cnwebs-wmsports.com">完美体育</a>并没有试图包罗万象，而是专注于把「看体育」这件事变得更舒服、更直接。
+        从比赛日程到赛事背景，从球队动态到观赛小技巧，内容的落脚点始终是普通爱好者。
+      </p>
+      <p>
+        你可以把它理解成一个随身的信息角落：不需要翻遍社交媒体，也不用忍受弹窗和夸张的标题。这里的信息以实用为主，
+        偶尔有观点，但更多时候只是帮你把零散的数据和新闻整理成可以快速消化的段落。
+      </p>
+
+      <blockquote>
+        “刚开始只是搜一场比赛的日期，后来发现这里赛前分析写得比很多大媒体还清爽。现在每周都会上来瞄一眼。”
+        <cite>—— 一位来自大连的用户留言</cite>
+      </blockquote>
+
+      <p>
+        我们不追着热点跑，也不制造焦虑。如果你是那种只想安静看看赛程、读读简明复盘的人，
+        大概率会喜欢这里的氛围。当然，如果你有任何想了解的赛事或队伍，也可以顺着站内指引找到对应的内容。
+      </p>
+
+      <!-- 场景小卡片 -->
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>📅 赛历</h3>
+          <p>主流联赛、杯赛日程一览，不再错过关键场次。</p>
+        </div>
+        <div class="feature-card">
+          <h3>🧭 入门解说</h3>
+          <p>规则、术语、看点拆解，新手也能看懂门道。</p>
+        </div>
+        <div class="feature-card">
+          <h3>📰 短讯</h3>
+          <p>精简的赛果与动态，适合通勤间隙扫一眼。</p>
+        </div>
+      </div>
+
+      <!-- FAQ 摘要 -->
+      <div class="question-box">
+        <h3>❓ 一些快速解答</h3>
+        <p><strong>需要注册吗？</strong> 大部分内容直接浏览即可，部分互动功能需要简单注册。</p>
+        <p><strong>有手机版吗？</strong> 页面会自动适配屏幕，在手机上阅读体验也不错。</p>
+        <p><strong>内容更新频率？</strong> 核心赛事期间每日更新，平时保持每周数次更新。</p>
+      </div>
+
+      <!-- 自然嵌入访问句 -->
+      <div class="visit-note">
+        🏀 如果你正在找一处没有噪音的体育信息站，不妨试试 <a href="https://cnwebs-wmsports.com">完美体育</a>，也许正是你一直想要的那个节奏。
+      </div>
+    </article>
+
+    <footer class="footer-note">
+      内容仅供参考 · 不构成任何专业建议 · 请根据个人情况判断
+    </footer>
+  </main>
+
+</body>
+</html>
