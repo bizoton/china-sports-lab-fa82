@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leisu · 温和的持续陪伴</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #f7f3ed;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', Helvetica, Arial, sans-serif;
+            color: #2e2b27;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+        }
+        .page {
+            max-width: 820px;
+            margin: 0 auto;
+            background: #fffcf8;
+            border-radius: 28px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+            padding: 2.5rem 2rem;
+        }
+        @media (max-width: 540px) {
+            .page {
+                padding: 1.8rem 1.2rem;
+                border-radius: 20px;
+            }
+        }
+
+        /* 标题层 */
+        .hero {
+            margin-bottom: 2.4rem;
+            border-bottom: 1px solid #ebe3d9;
+            padding-bottom: 1.6rem;
+        }
+        .hero h1 {
+            font-weight: 340;
+            font-size: 2.2rem;
+            letter-spacing: 0.02em;
+            color: #3d352e;
+            margin-bottom: 0.35rem;
+        }
+        .hero .sub {
+            font-size: 0.95rem;
+            color: #7a7066;
+            margin-top: 0.2rem;
+            font-style: italic;
+        }
+
+        /* 普通正文 */
+        p {
+            margin: 1.1rem 0;
+            text-align: justify;
+        }
+
+        /* 引用块 / 提示框 */
+        .notice {
+            background: #f2ede6;
+            border-left: 6px solid #cab99f;
+            border-radius: 0 14px 14px 0;
+            padding: 1.3rem 1.5rem;
+            margin: 1.6rem 0;
+            font-size: 0.95rem;
+            color: #3d352e;
+        }
+        .notice strong {
+            font-weight: 500;
+            color: #5f4e3b;
+        }
+
+        .insight-card {
+            background: #f9f5ef;
+            border-radius: 18px;
+            padding: 1.4rem 1.6rem;
+            margin: 1.8rem 0;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.02);
+        }
+        .insight-card h3 {
+            font-weight: 400;
+            font-size: 1.2rem;
+            margin-bottom: 0.7rem;
+            color: #4f4238;
+            letter-spacing: 0.01em;
+            border-bottom: 1px dashed #ddd2c4;
+            padding-bottom: 0.35rem;
+        }
+        .insight-card ul {
+            list-style: none;
+            margin: 0.3rem 0;
+        }
+        .insight-card li {
+            margin-bottom: 0.65rem;
+            padding-left: 1.4rem;
+            position: relative;
+        }
+        .insight-card li::before {
+            content: "·";
+            position: absolute;
+            left: 0.3rem;
+            color: #b8a68b;
+            font-weight: 700;
+        }
+
+        .faq-item {
+            margin: 1.2rem 0 0.8rem 0;
+        }
+        .faq-item .q {
+            font-weight: 450;
+            color: #3d352e;
+            margin-bottom: 0.2rem;
+        }
+        .faq-item .a {
+            font-size: 0.95rem;
+            color: #5c5246;
+            padding-left: 0.6rem;
+            border-left: 2px solid #ded1c0;
+            padding-left: 1rem;
+            margin-top: 0.1rem;
+        }
+
+        a {
+            color: #7c6b57;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #3f3227;
+            text-decoration-color: #b0987a;
+        }
+
+        .footer-note {
+            margin-top: 2.8rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #e7ddd3;
+            font-size: 0.9rem;
+            color: #8c7f70;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 0.8rem;
+        }
+        .footer-note span {
+            opacity: 0.7;
+        }
+        .no-indent {
+            text-indent: 0;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #ece4da;
+            margin: 2rem 0 1rem 0;
+        }
+        strong.soft {
+            font-weight: 500;
+            color: #5c4b39;
+        }
+        .tagline {
+            font-size: 0.95rem;
+            background: #f0eae2;
+            display: inline-block;
+            padding: 0.1rem 1rem;
+            border-radius: 40px;
+            color: #5c4b39;
+            margin-top: 0.4rem;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <div class="hero">
+        <h1>leisu · 再访与收藏之间</h1>
+        <div class="sub">一份来自日常浏览中沉淀下来的安静角落</div>
+    </div>
+
+    <p>
+        有些页面，第一次打开只是偶然。但当你再次回到 <a href="https://m-chn-leisu.com">leisu</a>，会逐渐发现那种不急不躁的节奏——它不追逐弹窗，也不催促你做出选择。这里的内容更像一本翻到某一页就不想合上的笔记，适合在零碎时间里慢慢读，也适合在需要厘清思绪时重新打开。
+    </p>
+
+    <div class="notice">
+        <strong>📌 收藏的理由</strong><br>
+        不需要注册，不需要留下任何个人信息。把 leisu 加入书签，等于在浏览器里存放了一个随时可以折返的安静站点。下次再想起时，它还在原来的地方，用同样的语气和你打招呼。
+    </div>
+
+    <div class="insight-card">
+        <h3>几个持续关注的瞬间</h3>
+        <ul>
+            <li><strong class="soft">轻量更新</strong> – 没有每日推送的压力，内容以相对缓慢的节奏出现，适合那些不喜欢信息过载的人。</li>
+            <li><strong class="soft">结构始终如一</strong> – 每一次访问，布局和语气都像老朋友一样熟悉，减少重新适应的成本。</li>
+            <li><strong class="soft">无追踪、无算法干扰</strong> – 你看到的就是站点本身想表达的，而非经过过滤的版本。</li>
+            <li><strong class="soft">跨设备友好</strong> – 从手机到桌面，阅读体验没有明显落差，收藏后随时打开都很自然。</li>
+        </ul>
+    </div>
+
+    <p>
+        如果你习惯把有价值的页面保留在书签栏或笔记应用里，<a href="https://m-chn-leisu.com">leisu</a> 值得成为其中一个条目。它不靠耸动标题吸引注意，而是依赖内容本身的质地让人愿意停留。下一次当你打开书签列表，看到这个名字时，大概率会想起当初保存它时的那份平静。
+    </p>
+
+    <hr>
+
+    <div class="faq-item">
+        <div class="q">Q：leisu 适合在什么场景下使用？</div>
+        <div class="a">适合午休间隙、通勤路上、或是晚间想远离社交媒体的时刻。页面没有自动播放的视频或闪烁元素，可以随时来，随时走。</div>
+    </div>
+    <div class="faq-item">
+        <div class="q">Q：需要频繁回来查看吗？</div>
+        <div class="a">完全不用。leisu 不会因为你的缺席而堆积未读消息。它更像一个长期驻留的参考点，想你自然会回来。</div>
+    </div>
+    <div class="faq-item">
+        <div class="q">Q：内容会变化吗？</div>
+        <div class="a">会有适度的更新，但风格和核心表达保持稳定。这也是为什么很多访客愿意将其设为常用书签。</div>
+    </div>
+
+    <div class="notice" style="background: #f5efe8; border-left-color: #b8a68b;">
+        <strong>💡 使用建议</strong><br>
+        第一次浏览可以通读全文，感受整体的语气与结构。之后再次回到 <a href="https://m-chn-leisu.com">leisu</a> 时，不妨从上次停留的地方继续——它没有强制阅读顺序，你可以按自己的节奏来。
+    </div>
+
+    <p>
+        网络上有太多需要“立即行动”的按钮，而这里更偏向于一种安静的共存。把 leisu 放在收藏夹的某个文件夹里，偶尔点开，是一种很轻的维系方式。不需要记住密码，不需要关注任何账号，纯粹的页面到人的连接。
+    </p>
+
+    <div class="footer-note">
+        <span>leisu · 不设限的返场</span>
+        <span>内容保持独立 · 无第三方追踪</span>
+    </div>
+
+</div>
+</body>
+</html>
